@@ -61,6 +61,3 @@ The score is a rule-based indicator, not a calibrated probability of compromise.
 | `sample_data.py` | Example scan input |
 | `requirements.txt` | Streamlit and Plotly dependencies |
 
-## Limitations
-
-Pattern matches require human review. Ordinary SQL statements can trigger the SQL rule, and matching an identifier format does not validate that identifier or prove a breach. The scanner can miss obfuscated or unfamiliar secrets. It does not execute code, scan networks, inspect binary documents, or establish regulatory compliance. History is held in Streamlit session state rather than persistent storage. Findings and downloaded reports include matched values, so handle them as sensitive data.
